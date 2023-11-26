@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body .container {
+    width: 100%;
+    height: 90vh;
+    background: #e3f9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+body .container .calculator{
+    background: #3a4452;
+    padding: 20px;
+   border-radius: 10px;
+}
+body .container .calculator form div input{
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(225, 225, 225,0.1),5px 5px 15px rgba(0, 0, 0,0.2);
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+body .container .calculator form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+   
+}
+body .container .calculator form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none; 
+}
+body .container .calculator form div .equal{
+   width: 145px;
+   color: #33ffd8;
+}
+body .container .calculator form div .operator{
+    color: #33ffd8;
+ }
+
+ body .hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #08001f, #30197d);
+    color: #fff;
+    position: relative;
+ }
+ body .hero .container{
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: red;
+    
+ }
+ body .hero .container::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #F41B75;
+    border-radius: 5px;
+    position: absolute;
+    left: -50PX;
+    top: -50PX;
+    z-index: -1;
+ 
+ }
+ body .hero .container::after{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #419AFF;
+    border-radius: 50%;
+    position: absolute;
+    right: -30PX;
+    bottom: -50PX;
+    z-index: -1;
+ 
+ }
+ body .hero .container .clock{
+    width: 100%;
+    height: 100%;
+    background: rgba(235,0,255,0.11);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    backdrop-filter: blur;
+ }
+ body .hero .container .clock span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    
+ }
+ body .hero .container .clock span::after{
+   
+   font-size: 16px;
+   position: absolute;
+   bottom: -5px;
+   left: 50%;
+   transform: translateX(-50%);
+    
+ }
+ body .hero .container .clock #hour::after{
+    content: 'HOURS';
+ }
+ body .hero .container .clock #minutes::after{
+    content: 'MINUTES'; 
+ }
+ body .hero .container .clock #seconds::after{
+    content: 'SECONDS';  
+ }
+
+
+
+
